@@ -216,24 +216,29 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Streamlit
-.streamlit/secrets.toml
-# Secrets
+# Secrets and API keys
 .env
-.env.*
-!.env.example
+kaggle.json
 
-# Local database and uploaded files
-db.sqlite3
-media/
-staticfiles/
+# Datasets
+data/
+datasets/
+*.zip
 
-# AI model weights (download at deploy time)
+# Trained models
 *.pt
 *.pth
 *.h5
+*.tflite
 *.onnx
-models/
+*.keras
+checkpoints/
 
-# Logs
-*.log
+# Training outputs
+runs/
+outputs/
+wandb/
+lightning_logs/
+
+# Notebook clutter
+.ipynb_checkpoints/
