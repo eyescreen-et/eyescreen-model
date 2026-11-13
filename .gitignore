@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local database and uploaded files
+db.sqlite3
+media/
+staticfiles/
+
+# AI model weights (download at deploy time)
+*.pt
+*.pth
+*.h5
+*.onnx
+models/
+
+# Logs
+*.log
